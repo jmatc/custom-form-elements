@@ -1,0 +1,39 @@
+/* checkboxes */
+
+.checkbox-wrapper {
+    background: url("../images/sprite.png") no-repeat 0 0;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.checkbox-wrapper.active {
+    background-position: 0 -20px;
+}
+
+.checkbox-wrapper input {
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+/* radios */
+
+.radio-wrapper {
+    background: url("../images/sprite.png") no-repeat -24px 0;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.radio-wrapper.active {
+    background-position: -24px -20px;
+}
+
+.radio-wrapper input {
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}

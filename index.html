@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom Checkboxes and Radios</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="jquery.customFormElements.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/custom-form-elements.css">
+</head>
+<body>
+
+	<section id="wrap">
+		<form>
+			<label for="checkbox">Checkbox</label>
+			<input type="checkbox" name="checkbox"/>
+			<br/><br/>
+			<label for="radio">Radio</label>
+			<input type="radio" name="radio"/>
+		</form>
+	</section>
+
+	<script>
+		(function($){
+			$('input[type="checkbox"]').customFormElements();
+			$('input[type="radio"]').customFormElements();
+		})(jQuery);
+	</script>
+
+</body>
+</html>
