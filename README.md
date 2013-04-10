@@ -1,39 +1,38 @@
-custom-form-elements
-====================
+<h1>Custom Form Elements</h1>
+Version: 1.2
 
-A simple, lightweight, custom form elements plugin.  Allows styling of checkboxes and radio buttons.
+<i>A simple, lightweight, custom form elements plugin.  Allows styling of checkboxes and radio buttons.</i>
 
-Usage:
-====================
+<h2>Usage:</h2>
 
-Apply customFormElements(); to a checkbox and/or radio button to allow simple styling of each, based on image sprite.
+Apply <code>customFormElements()</code> to a checkbox and/or radio button to allow simple styling of each, based on image sprite.
 
+<h4>Settings/defaults:</h4>
 
-/**
- *  Settings/defaults
- */
-
-// callbacks:
-
-beforeUnChecked : function (){} // executes callback function before unchecking styled target checkbox
-afterUnChecked : function (){}  // executes callback function after unchecking styled target checkbox
-beforeChecked : function (){}   // executes callback function before checking or selecting styled target
-afterChecked : function (){}    // executes callback function after checking or selecting styled target
+<code>beforeUnChecked</code> : <i>( function )</i> executes callback function before unchecking styled target checkbox<br>
+<code>afterUnChecked</code> : <i>( function )</i> executes callback function after unchecking styled target checkbox<br>
+<code>beforeChecked</code> : <i>( function )</i> executes callback function before checking or selecting styled target<br>
+<code>afterChecked</code> : <i>( function )</i> executes callback function after checking or selecting styled target<br>
 
 ---
 
 Example usage ( no callback ):
 
+<pre>
 var checkBox = $( 'input[type="checkbox"]' );
-checkBox.customFormElements();
 
+checkBox.customFormElements();
+</pre>
 -
 
 Example usage ( with callback ):
 
+<pre>
 var checkBox = $( 'input[type="checkbox"]' );
+
 checkBox.customFormElements({
   beforeChecked : function (){
     alert('Before checked');
   }
 });
+</pre>
