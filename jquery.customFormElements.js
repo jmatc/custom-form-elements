@@ -1,4 +1,3 @@
-
 /**
  *	jQuery Custom Form Elements Plugin 1.2.0
  *
@@ -31,6 +30,7 @@
 				var opts = $.extend( {}, methods.settings, options );
 				opts.checkboxWrap = $('<div class="checkbox-wrapper"/>');
 				opts.radioWrap = $('<div class="radio-wrapper"/>');
+				opts.radioEl = $('input[type="radio"]');
 				$this.data(methods.namespace, opts);
 				data = $this.data(methods.namespace);
 			}
@@ -105,6 +105,10 @@
 			//	Wraps target with a parent wrapper
 			//	Replaces targets background image
 			$this.wrap(data.radioWrap);
+			
+			if ($this.prop('checked')) {
+				$this.parent().addClass('active');
+			}
 
 			$this.on('click', function(evt) {
 				var $radio = $(this);
@@ -116,7 +120,7 @@
 				}
 
 				//	looks for name attribute for target - removes 'active' state
-				$radio.filter('[name="' + radioGroup + '"]').parent().removeClass('active');
+				data.radioEl.filter('[name="' + radioGroup + '"]').parent().removeClass('active');
 
 				//	re-applies 'active' state
 				$radio.parent().addClass('active');
