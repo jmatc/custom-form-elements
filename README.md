@@ -3,6 +3,8 @@ Version: 1.2
 
 <i>A simple, lightweight, custom form elements plugin.  Allows styling of checkboxes and radio buttons.</i>
 
+View the <a href="http://plugins.jonathancalvin.com/customformelements/">Demo</a>
+
 <h2>Usage:</h2>
 
 Apply <code>customFormElements()</code> to a checkbox and/or radio button to allow simple styling of each, based on image sprite.
