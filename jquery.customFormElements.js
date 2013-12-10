@@ -1,7 +1,12 @@
-
 /**
- *	Custom Form Elements Plugin
- *	v1.3
+ *  jQuery Custom Form Elements Plugin 1.3.0
+ *
+ *  https://github.com/jmatc/custom-form-elements
+ *  https://github.com/jmatc/custom-form-elements/blob/master/README.md
+ *
+ *  (c) 2013 Jonathan Calvin
+ *  Released under the MIT license:
+ *  http://www.opensource.org/licenses/mit-license.php
  */	
 ;(function($){
 
